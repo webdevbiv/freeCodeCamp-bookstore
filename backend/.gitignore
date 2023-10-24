@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+
+# IDE directories
+.idea/
+.vscode/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Build directory
+/dist
+/build
+
+# Temporary files
+*.tmp
+*.temp
+
+# Other
+.nyc_output
+coverage/
