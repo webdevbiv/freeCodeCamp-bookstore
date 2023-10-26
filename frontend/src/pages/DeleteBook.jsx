@@ -31,7 +31,7 @@ const DeleteBook = () => {
         <Spinner />
       ) : (
         <div className='flex flex-col items-center border-2 border-sky-400 rounded-xl w-[600px] p-8 mx-auto'>
-          <h3 className='text-2x1'>
+          <h3 className='text-2xl'>
             Are You Sure You Want To Delete This Book?
           </h3>
           <button
