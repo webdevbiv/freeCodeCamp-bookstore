@@ -22,12 +22,10 @@ const EditBook = () => {
         setTitle(res.data.title);
         setAuthor(res.data.author);
         setPublishYear(res.data.publishYear);
-        enqueueSnackbar("Book fetched successfully", { variant: "success" });
 
         setIsLoading(false);
       })
       .catch(() => {
-        enqueueSnackbar("Failed to fetch book", { variant: "error" });
         setIsLoading(false);
       });
   }, [id, setIsLoading, enqueueSnackbar]);
@@ -43,10 +41,11 @@ const EditBook = () => {
       .put(`http://localhost:3001/books/${id}`, newBook)
       .then(() => {
         setIsLoading(false);
+        enqueueSnackbar("Book updated successfully", { variant: "success" });
         navigate("/");
       })
       .catch(() => {
-        enqueueSnackbar("Failed to create book", { variant: "error" });
+        enqueueSnackbar("Failed to update book", { variant: "error" });
         setIsLoading(false);
       });
   };
