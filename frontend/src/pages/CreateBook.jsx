@@ -1,8 +1,8 @@
 import { useState } from "react";
-import BackButton from "../../components/BackButton/BackButton";
-import Spinner from "../../components/Spinner/Spinner";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/BackButton/BackButton";
+import Spinner from "../components/Spinner/Spinner";
 
 const CreateBook = () => {
   const [title, setTitle] = useState("");

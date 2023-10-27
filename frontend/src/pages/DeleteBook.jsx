@@ -1,8 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import BackButton from "../../components/BackButton/BackButton";
-import Spinner from "../../components/Spinner/Spinner";
+import BackButton from "../components/BackButton/BackButton";
+import Spinner from "../components/Spinner/Spinner";
 
 const DeleteBook = () => {
   const [isLoading, setIsLoading] = useState(false);
